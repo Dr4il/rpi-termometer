@@ -28,7 +28,7 @@ func main() {
         for _,sensor := range sensors {
                  p, err := ds18b20.Temperature(sensor)
                 if err == nil {
-			x := fmt.Sprintf("Actual temp in DevOps room is: %.2f Celsius \n", p)
+			x := fmt.Sprintf("Actual temp in room is: %.2f Celsius \n", p)
                         z.WriteString(x)
                         if err  != nil {
                         fmt.Println(err)
